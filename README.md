@@ -1,4 +1,4 @@
-# NOVAsdk2019.07 PLC
+# NovaPLC-2019.07 PLC
 # (C) Copyright 2019 Novasom Industries
 This repo contains the tools and sources for the PLC app on NOVAsdk2019.07 Novasom Industries 
 project.  
@@ -14,4 +14,3 @@ See also the list of [contributors](https://github.com/NovasomIndustries/Doc/blo
 
 ## License
 This project is licensed under the [GNU GENERAL PUBLIC LICENSE ](https://github.com/NovasomIndustries/Doc/blob/master/LICENSE.md)
-# NovaPLC-2019.07
