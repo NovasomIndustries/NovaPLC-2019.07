@@ -2,7 +2,8 @@
 # (C) Copyright 2019 Novasom Industries
 This repo contains the tools and sources for the PLC app on NOVAsdk2019.07 Novasom Industries 
 project.  
-Can be downloaded at at [NOVAsomIndustries on github](https://novasomindustries.github.io/Doc/)
+It can be downloaded at at [NOVAsomIndustries on github](https://novasomindustries.github.io/Doc/)
+Based on https://github.com/thiagoralves/OpenPLC_v2 by Thiago Alves
 
 ## Prerequisities
 A running Debian 9 or an equivalent virtual machine

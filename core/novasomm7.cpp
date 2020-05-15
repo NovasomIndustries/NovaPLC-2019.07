@@ -25,7 +25,7 @@
 // Fil, Mar 2018
 //-----------------------------------------------------------------------------
 
-#ifdef NOVASOM_P
+#ifdef NOVASOM_M7
 #include <stdio.h>
 #include <stdlib.h>
 #include <unistd.h>
@@ -37,8 +37,29 @@
 #define MAX_OUTPUT 		1
 #define MAX_ANALOG_OUT	0
 
-int inBufferPinMask[MAX_INPUT]	=	{ 142 };
-int outBufferPinMask[MAX_OUTPUT]=	{ 144 };
+
+/* port->pin definition
+gpio<port>_<offset><bit>
+ where 
+	if offset == a -> index = 0
+	if offset == b -> index = 8
+	if offset == c -> index = 16
+	if offset == d -> index = 24
+ so
+	gpio = 32 * port + index + bit 
+
+example1 : gpio3_a5 -> 32*3+0+5  -> 101
+example2 : gpio2_c7 -> 32*2+24+7 ->  95
+*/
+
+/*
+using gpio3_a5 as input and gpio3_a6 as output
+*/
+#define	GPIO3_A5	101
+#define	GPIO3_A6	102
+
+int inBufferPinMask[MAX_INPUT]	=	{ GPIO3_A5 };
+int outBufferPinMask[MAX_OUTPUT]=	{ GPIO3_A6 };
 
 //analogOutBufferPinMask: pin mask for the analog PWM
 //output of the RaspberryPi
@@ -134,5 +155,5 @@ FILE	*fp;
 }
 
 #else
-#warning "NOVASOM_P not defined"
+#warning "NOVASOM_M7 not defined"
 #endif
