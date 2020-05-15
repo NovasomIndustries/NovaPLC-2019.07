@@ -437,7 +437,7 @@ Copyright (C) 2012 Free Software Foundation, Inc.
 This config.status script is free software; the Free Software Foundation
 gives unlimited permission to copy, distribute and modify it."
 
-ac_pwd='/Devel/NOVAsdk/NOVAplc/matiec'
+ac_pwd='/Devel/NOVAsdk2019.07/NovaPLC-2019.07/matiec'
 srcdir='.'
 INSTALL='/usr/bin/install -c'
 MKDIR_P='/bin/mkdir -p'
@@ -672,7 +672,7 @@ S["mkdir_p"]="$(MKDIR_P)"
 S["MKDIR_P"]="/bin/mkdir -p"
 S["INSTALL_STRIP_PROGRAM"]="$(install_sh) -c -s"
 S["STRIP"]=""
-S["install_sh"]="${SHELL} /Devel/NOVAsdk/NOVAplc/matiec/config/install-sh"
+S["install_sh"]="${SHELL} /Devel/NOVAsdk2019.07/NovaPLC-2019.07/matiec/config/install-sh"
 S["MAKEINFO"]="makeinfo"
 S["AUTOHEADER"]="autoheader"
 S["AUTOMAKE"]="automake-1.15"

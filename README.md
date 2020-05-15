@@ -8,6 +8,11 @@ Based on https://github.com/thiagoralves/OpenPLC_v2 by Thiago Alves
 ## Prerequisities
 A running Debian 9 or an equivalent virtual machine
 
+## Usage
+1) Load novaplc executable and run in background ( ./novaplc & )
+2) Use writefifo to send one of the three available commands ( START , PAUSE, STOP ) : ./writefifo <command>
+   The STOP command shuts down novaplc and is intended as an emergency stop, while pause stops operation until a START is issued
+
 ## Authors
 * Filippo Visocchi 	 - Initial work - [NOVAsomIndustries](http://www.novasomindustries.com)  
 * Michele Puca     	 - Initial work - [NOVAsomIndustries](http://www.novasomindustries.com)  

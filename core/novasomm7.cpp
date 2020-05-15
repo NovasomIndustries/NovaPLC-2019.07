@@ -55,11 +55,11 @@ example2 : gpio2_c7 -> 32*2+24+7 ->  95
 /*
 using gpio3_a5 as input and gpio3_a6 as output
 */
-#define	GPIO3_A5	101
-#define	GPIO3_A6	102
+#define	GPIO3_A0	96
+#define	GPIO3_A1	97
 
-int inBufferPinMask[MAX_INPUT]	=	{ GPIO3_A5 };
-int outBufferPinMask[MAX_OUTPUT]=	{ GPIO3_A6 };
+int inBufferPinMask[MAX_INPUT]	=	{ GPIO3_A0 };
+int outBufferPinMask[MAX_OUTPUT]=	{ GPIO3_A1 };
 
 //analogOutBufferPinMask: pin mask for the analog PWM
 //output of the RaspberryPi
